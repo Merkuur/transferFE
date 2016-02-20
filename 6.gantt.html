@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Clickable links</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Clickable links</title>
+    <script src="js/gantt/codebase/dhtmlxgantt.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="js/gantt/codebase/dhtmlxgantt.css" type="text/css" media="screen" title="no title"
+          charset="utf-8">
+
+    <script type="text/javascript" src="js/gantt/common/testdata.js"></script>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/font.css" type="text/css"/>
+    <link rel="stylesheet" href="js/select2/select2.css" type="text/css"/>
+    <link rel="stylesheet" href="js/select2/theme.css" type="text/css"/>
+    <link rel="stylesheet" href="js/fuelux/fuelux.css" type="text/css"/>
+    <link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css"/>
+    <link rel="stylesheet" href="js/slider/slider.css" type="text/css"/>
+    <link rel="stylesheet" href="css/app.css" type="text/css"/>
 </head>
-<script src="js/gantt/codebase/dhtmlxgantt.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" href="js/gantt/codebase/dhtmlxgantt.css" type="text/css" media="screen" title="no title" charset="utf-8">
-
-<script type="text/javascript" src="js/gantt/common/testdata.js"></script>
-<style type="text/css">
-  html, body{ height:100%; padding:0px; margin:0px; overflow: hidden;}
-</style>
 <body>
-<div id="gantt_here" style='width:100%; height:100%;'></div>
-<script type="text/javascript">
-  gantt.init("gantt_here");
-  gantt.parse(demo_tasks);
 
-  gantt.attachEvent("onLinkClick", function(id){
-    var link = this.getLink(id),
-            src = this.getTask(link.source),
-            trg = this.getTask(link.target),
-            types = this.config.links;
+<section class="vbox">
+    <header class="bg-dark dk header navbar navbar-fixed-top-xs">
+        <div class="navbar-header aside-md">
+            <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png" class="m-r-sm">Merkuur</a>
+            <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
+                <i class="fa fa-cog"></i>
+            </a>
+        </div>
 
-    var first = "", second = "";
-    switch (link.type){
-      case types.finish_to_start:
-        first = "finish";
-        second = "start";
-        break;
-      case types.start_to_start:
-        first = "start";
-        second = "start";
-        break;
-      case types.finish_to_finish:
-        first = "finish";
-        second = "finish";
-        break;
-    }
+    </header>
+    <section>
+        <section class="hbox stretch">
+            <section id="content">
+                <section class="vbox">
+                    <section class="scrollable padder">
+                        <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+                            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="active">Overview</li>
+                        </ul>
+                        <div class="m-b-md">
 
-    gantt.message("Must " + first + " <b>" + src.text + "</b> to " + second + " <b>" + trg.text + "</b>");
-  });
+                            <div id="gantt_here" style='width:100%; height:500px;'></div>
+                            <script type="text/javascript">
+                                gantt.init("gantt_here");
+                                gantt.parse(demo_tasks);
 
-</script>
+                                gantt.attachEvent("onLinkClick", function (id) {
+                                    var link = this.getLink(id),
+                                            src = this.getTask(link.source),
+                                            trg = this.getTask(link.target),
+                                            types = this.config.links;
+
+                                    var first = "", second = "";
+                                    switch (link.type) {
+                                        case types.finish_to_start:
+                                            first = "finish";
+                                            second = "start";
+                                            break;
+                                        case types.start_to_start:
+                                            first = "start";
+                                            second = "start";
+                                            break;
+                                        case types.finish_to_finish:
+                                            first = "finish";
+                                            second = "finish";
+                                            break;
+                                    }
+
+                                    gantt.message("Must " + first + " <b>" + src.text + "</b> to " + second + " <b>" + trg.text + "</b>");
+                                });
+
+                            </script>
+                        </div>
+
+                    </section>
+                </section>
+                <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+            </section>
+            <aside class="bg-light lter b-l aside-md hide" id="notes">
+                <div class="wrapper">Notification</div>
+            </aside>
+        </section>
+    </section>
+</section>
+
+
 </body>
+</html>
