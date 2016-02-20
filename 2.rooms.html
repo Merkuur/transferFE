@@ -21,6 +21,10 @@
 	<script src="js/ie/respond.min.js"></script>
 	<script src="js/ie/excanvas.js"></script>
 	<![endif]-->
+	<!--Jquery datepicker-->
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 <body>
 <section class="vbox">
@@ -81,7 +85,7 @@
 													<label class="col-sm-12 m-l-n m-t-n">Price range</label>
 													<div class="inline v-middle">
 														<div class="input-group input-s-sm">
-															<input type="text" id="appendedInput"
+															<input type="text" id="product-price-from"
 																   class="input-sm form-control">
 															<div class="input-group-btn">
 																<button class="btn btn-default btn-sm dropdown-toggle"
@@ -104,7 +108,7 @@
 													</div>
 													<div class="inline v-middle">
 														<div class="input-group input-s-sm">
-															<input type="text" id="appendedInput2"
+															<input type="text" id="product-price-to"
 																   class="input-sm form-control">
 															<div class="input-group-btn">
 																<button class="btn btn-default btn-sm dropdown-toggle"
@@ -142,7 +146,7 @@
 													<label class="col-sm-12 m-l-n m-t-n">Price range</label>
 													<div class="inline v-middle">
 														<div class="input-group input-s-sm">
-															<input type="text" id="appendedInput"
+															<input type="text" id="service-price-from"
 																   class="input-sm form-control">
 															<div class="input-group-btn">
 																<button class="btn btn-default btn-sm dropdown-toggle"
@@ -165,7 +169,7 @@
 													</div>
 													<div class="inline v-middle">
 														<div class="input-group input-s-sm">
-															<input type="text" id="appendedInput2"
+															<input type="text" id="service-price-to"
 																   class="input-sm form-control">
 															<div class="input-group-btn">
 																<button class="btn btn-default btn-sm dropdown-toggle"
@@ -193,6 +197,8 @@
 															Do you have the materials?
 														</label>
 													</div>
+													<p>From: <input type="text" id="datepicker-from"></p>
+													<p>To: <input type="text" id="datepicker-to"></p>
 												</div>
 
 											</div>

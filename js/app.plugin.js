@@ -260,6 +260,11 @@
         tokenSeparators: [",", " "]}
       );
   	}
+	  // datepicker
+	  $(function() {
+		  $( "#datepicker-from" ).datepicker();
+		  $( "#datepicker-to" ).datepicker("show");
+	  });
 
 
   });
