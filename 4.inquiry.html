@@ -48,7 +48,7 @@
 							<h3 class="m-b-none">Inquiry</h3>
 						</div>
 						<div class="row">
-							<div class="col-sm-7">
+							<div class="col-sm-9">
 								<form data-validate="parsley">
 									<section class="panel panel-default">
 										<header class="panel-heading">
@@ -56,30 +56,26 @@
 										</header>
 										<div class="panel-body">
 											<div class="form-group pull-in clearfix">
-												<div class="col-sm-12">
-													<label>Name</label>
+												<div class="col-sm-4">
+													<label class="m-t-xs">Name</label>
 													<input type="text" class="form-control" placeholder="Inquiry name"
 														   data-required="true">
 												</div>
 												<div class="form-group">
-													<label class="col-sm-2 control-label">Date</label>
 													<div class="col-sm-10">
+														<label class="m-t-xs">Date</label>
 														<input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy">
 													</div>
 												</div>
-												<div class="col-sm-12">
-													<label>Address</label>
-													<input type="text" class="form-control" placeholder="Define your address"
-														   data-required="true">
-												</div>
+
 											</div>
 
 											<h4 class="m-t-md">Products</h4>
 											<div class="table-responsive">
-												<table class="table table-striped b-t b-light" style="max-width: 500px;">
+												<table class="table table-striped b-t b-light" >
 													<thead>
 													<tr>
-														<th width="200" class="th-sortable" data-toggle="class">Room name
+														<th width="" class="th-sortable" data-toggle="class">Room name
                           <span class="th-sort">
                             <i class="fa fa-sort-down text"></i>
                             <i class="fa fa-sort-up text-active"></i>
@@ -88,48 +84,71 @@
 														</th>
 														<th>From</th>
 														<th>To</th>
-														<th width="30"></th>
+														<th>Delivery date</th>
+														<th>Price</th>
 													</tr>
 													</thead>
 													<tbody>
 													<tr>
-														<td>Chair</td>
-														<td>20</td>
+														<td>Dishwasher</td>
 														<td>50</td>
+														<td>200</td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
 														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>Sink</td>
-														<td>50</td>
-														<td>100</td>
-														<td>
-															<a href="#" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
+															<div class="inline v-middle">
+																<div class="input-group input-s-sm">
+																	<input type="text" id="product-price-from"
+																		   class="input-sm form-control">
+																	<div class="input-group-btn">
+																		<button class="btn btn-default btn-sm dropdown-toggle"
+																				data-toggle="dropdown">
+																			<span class="dropdown-label">EUR</span>
+																			<span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu dropdown-select pull-right">
+																			<li class="active">
+																				<a href="#"><input type="radio" value="EUR"
+																								   name="pay_unit" checked="">EUR</a>
+																			</li>
+																			<li>
+																				<a href="#"><input type="radio" value="GBP"
+																								   name="pay_unit">GBP</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
 														</td>
 													</tr>
 													<tr>
 														<td>Fridge</td>
-														<td>100</td>
-														<td>200</td>
-														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>Kitchen counters</td>
 														<td>150</td>
 														<td>250</td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
 														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
+															<div class="inline v-middle">
+																<div class="input-group input-s-sm">
+																	<input type="text" id="product-price-from"
+																		   class="input-sm form-control">
+																	<div class="input-group-btn">
+																		<button class="btn btn-default btn-sm dropdown-toggle"
+																				data-toggle="dropdown">
+																			<span class="dropdown-label">EUR</span>
+																			<span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu dropdown-select pull-right">
+																			<li class="active">
+																				<a href="#"><input type="radio" value="EUR"
+																								   name="pay_unit" checked="">EUR</a>
+																			</li>
+																			<li>
+																				<a href="#"><input type="radio" value="GBP"
+																								   name="pay_unit">GBP</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
 														</td>
 													</tr>
 													</tbody>
@@ -137,10 +156,10 @@
 											</div>
 											<h4 class="m-t-md">Services</h4>
 											<div class="table-responsive">
-												<table class="table table-striped b-t b-light" style="max-width: 500px;">
+												<table class="table table-striped b-t b-light">
 													<thead>
 													<tr>
-														<th width="200" class="th-sortable" data-toggle="class">Room name
+														<th width="" class="th-sortable" data-toggle="class">Room name
                           <span class="th-sort">
                             <i class="fa fa-sort-down text"></i>
                             <i class="fa fa-sort-up text-active"></i>
@@ -149,58 +168,78 @@
 														</th>
 														<th>From</th>
 														<th>To</th>
-														<th width="30"></th>
+														<th>Working date from</th>
+														<th>Working date to</th>
+														<th>Price</th>
 													</tr>
 													</thead>
 													<tbody>
 													<tr>
-														<td>Chair</td>
-														<td>20</td>
-														<td>50</td>
-														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
-														</td>
-													</tr>
-													<tr>
 														<td>Sink</td>
-														<td>50</td>
-														<td>100</td>
+														<td>30</td>
+														<td>120</td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
 														<td>
-															<a href="#" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
+															<div class="inline v-middle">
+																<div class="input-group input-s-sm">
+																	<input type="text" id="product-price-from"
+																		   class="input-sm form-control">
+																	<div class="input-group-btn">
+																		<button class="btn btn-default btn-sm dropdown-toggle"
+																				data-toggle="dropdown">
+																			<span class="dropdown-label">EUR</span>
+																			<span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu dropdown-select pull-right">
+																			<li class="active">
+																				<a href="#"><input type="radio" value="EUR"
+																								   name="pay_unit" checked="">EUR</a>
+																			</li>
+																			<li>
+																				<a href="#"><input type="radio" value="GBP"
+																								   name="pay_unit">GBP</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>Fridge</td>
-														<td>100</td>
-														<td>200</td>
+														<td>Chair</td>
+														<td>70</td>
+														<td>140</td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
+														<td><input class="input-sm input-s datepicker-input form-control" size="16" type="text" value="20-02-2016" data-date-format="dd-mm-yyyy"></td>
 														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>Kitchen counters</td>
-														<td>150</td>
-														<td>250</td>
-														<td>
-															<a href="#" class="active" data-toggle="class"><i
-																	class="fa fa-check text-success text-active"></i><i
-																	class="fa fa-times text-danger text"></i></a>
+															<div class="inline v-middle">
+																<div class="input-group input-s-sm">
+																	<input type="text" id="product-price-from"
+																		   class="input-sm form-control">
+																	<div class="input-group-btn">
+																		<button class="btn btn-default btn-sm dropdown-toggle"
+																				data-toggle="dropdown">
+																			<span class="dropdown-label">EUR</span>
+																			<span class="caret"></span>
+																		</button>
+																		<ul class="dropdown-menu dropdown-select pull-right">
+																			<li class="active">
+																				<a href="#"><input type="radio" value="EUR"
+																								   name="pay_unit" checked="">EUR</a>
+																			</li>
+																			<li>
+																				<a href="#"><input type="radio" value="GBP"
+																								   name="pay_unit">GBP</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
 														</td>
 													</tr>
 													</tbody>
 												</table>
-												<!--<footer class="panel-footer text-right">
-													<a href="3.overview.html" class="btn btn-success btn-s-xs">
-														Start building
-													</a>
-												</footer>-->
-
 											</div>
 										</div>
 										<footer class="panel-footer text-left bg-light lter">
