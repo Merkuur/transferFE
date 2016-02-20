@@ -36,7 +36,7 @@
 			<a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png" class="m-r-sm">Merkuur</a>
+			<a href="#" class="navbar-brand"><img src="images/logo_light.png" class="m-r-sm"></a>
 			<a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
 				<i class="fa fa-cog"></i>
 			</a>
@@ -50,7 +50,7 @@
 					<section class="scrollable padder">
 						<ul class="breadcrumb no-border no-radius b-b b-light pull-in">
 							<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-							<li class="active">Overview</li>
+							<li class="active">Kanban</li>
 						</ul>
 						<div class="m-b-md">
 							<script type="text/javascript">
@@ -126,12 +126,12 @@
 										id: "myBoard",
 										type:"space",
 										cols:[
-											{ header:"Backlog",
+											{ header:"Added",
 												body:{ view:"kanbanlist", status:"new", type: "iconsEdit" }},
-											{ header:"In Progress",
+											{ header:"Inquired",
 												body:{ view:"kanbanlist", status:"work", type: "iconsEdit"}
 											},
-											{ header:"Testing",
+											{ header:"Confirmed",
 												body:{ view:"kanbanlist", status:"test", type: "iconsEdit" }},
 											{ header:"Done",
 												body:{ view:"kanbanlist", status:"done", type: "iconsEdit" }}
