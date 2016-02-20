@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="app">
+<head>
+	<meta charset="utf-8"/>
+	<title>Merkuur | Web Application</title>
+	<meta name="description"
+		  content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+	<link rel="stylesheet" href="css/animate.css" type="text/css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+	<link rel="stylesheet" href="css/font.css" type="text/css"/>
+	<link rel="stylesheet" href="js/select2/select2.css" type="text/css"/>
+	<link rel="stylesheet" href="js/select2/theme.css" type="text/css"/>
+	<link rel="stylesheet" href="js/fuelux/fuelux.css" type="text/css"/>
+	<link rel="stylesheet" href="js/datepicker/datepicker.css" type="text/css"/>
+	<link rel="stylesheet" href="js/slider/slider.css" type="text/css"/>
+	<link rel="stylesheet" href="css/app.css" type="text/css"/>
+	<!--[if lt IE 9]>
+	<script src="js/ie/html5shiv.js"></script>
+	<script src="js/ie/respond.min.js"></script>
+	<script src="js/ie/excanvas.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section class="vbox">
+	<header class="bg-dark dk header navbar navbar-fixed-top-xs">
+		<div class="navbar-header aside-md">
+			<a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen,open" data-target="#nav,html">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="#" class="navbar-brand" data-toggle="fullscreen"><img src="images/logo.png" class="m-r-sm">Merkuur</a>
+			<a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".nav-user">
+				<i class="fa fa-cog"></i>
+			</a>
+		</div>
+	</header>
+	<section>
+		<section class="hbox stretch">
+			<section id="content">
+				<section class="vbox">
+					<section class="scrollable padder">
+						<ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+							<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+							<li class="active">Rooms</li>
+						</ul>
+						<div class="m-b-md">
+							<h3 class="m-b-none">Rooms</h3>
+						</div>
+						<div class="row">
+							<div class="col-sm-7">
+								<form data-validate="parsley">
+									<section class="panel panel-default">
+										<header class="panel-heading">
+											<span class="h4">Add rooms</span>
+										</header>
+										<div class="panel-body">
+											<div class="form-group pull-in clearfix">
+												<div class="col-sm-12">
+													<label>Name</label>
+													<input type="text" class="form-control" placeholder="Room name"
+														   data-required="true">
+												</div>
+												<div class="col-sm-12">
+													<label>Size</label>
+													<input type="text" class="form-control" placeholder="Room size"
+														   data-required="true">
+												</div>
+												<div class="col-sm-12">
+													<label>Products</label>
+													<div class="m-b">
+														<select class="select-product-option" style="width:200px">
+															<optgroup label="Select product">
+																<option value="AK">product 1</option>
+																<option value="HI">product 2</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<label class="col-sm-12 m-l-n m-t-n">Price range</label>
+													<div class="inline v-middle">
+														<div class="input-group input-s-sm">
+															<input type="text" id="appendedInput"
+																   class="input-sm form-control">
+															<div class="input-group-btn">
+																<button class="btn btn-default btn-sm dropdown-toggle"
+																		data-toggle="dropdown">
+																	<span class="dropdown-label">EUR</span>
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu dropdown-select pull-right">
+																	<li class="active">
+																		<a href="#"><input type="radio" value="EUR"
+																						   name="pay_unit" checked="">EUR</a>
+																	</li>
+																	<li>
+																		<a href="#"><input type="radio" value="GBP"
+																						   name="pay_unit">GBP</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="inline v-middle">
+														<div class="input-group input-s-sm">
+															<input type="text" id="appendedInput2"
+																   class="input-sm form-control">
+															<div class="input-group-btn">
+																<button class="btn btn-default btn-sm dropdown-toggle"
+																		data-toggle="dropdown">
+																	<span class="dropdown-label">EUR</span>
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu dropdown-select pull-right">
+																	<li class="active">
+																		<a href="#"><input type="radio" value="EUR"
+																						   name="pay_unit" checked="">EUR</a>
+																	</li>
+																	<li>
+																		<a href="#"><input type="radio" value="GBP"
+																						   name="pay_unit">GBP</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-12">
+													<label>Services</label>
+													<div class="m-b">
+														<select class="select-service-option" style="width:200px">
+															<optgroup label="Select service">
+																<option value="AK">service 1</option>
+																<option value="HI">service 2</option>
+															</optgroup>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<label class="col-sm-12 m-l-n m-t-n">Price range</label>
+													<div class="inline v-middle">
+														<div class="input-group input-s-sm">
+															<input type="text" id="appendedInput"
+																   class="input-sm form-control">
+															<div class="input-group-btn">
+																<button class="btn btn-default btn-sm dropdown-toggle"
+																		data-toggle="dropdown">
+																	<span class="dropdown-label">EUR</span>
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu dropdown-select pull-right">
+																	<li class="active">
+																		<a href="#"><input type="radio" value="EUR"
+																						   name="pay_unit" checked="">EUR</a>
+																	</li>
+																	<li>
+																		<a href="#"><input type="radio" value="GBP"
+																						   name="pay_unit">GBP</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="inline v-middle">
+														<div class="input-group input-s-sm">
+															<input type="text" id="appendedInput2"
+																   class="input-sm form-control">
+															<div class="input-group-btn">
+																<button class="btn btn-default btn-sm dropdown-toggle"
+																		data-toggle="dropdown">
+																	<span class="dropdown-label">EUR</span>
+																	<span class="caret"></span>
+																</button>
+																<ul class="dropdown-menu dropdown-select pull-right">
+																	<li class="active">
+																		<a href="#"><input type="radio" value="EUR"
+																						   name="pay_unit" checked="">EUR</a>
+																	</li>
+																	<li>
+																		<a href="#"><input type="radio" value="GBP"
+																						   name="pay_unit">GBP</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="checkbox">
+														<label class="checkbox-custom">
+															<input type="checkbox" name="checkboxA" checked="unchecked">
+															<i class="fa fa-fw fa-square-o checked"></i>
+															Do you have the materials?
+														</label>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<footer class="panel-footer text-right bg-light lter">
+											<button type="submit" class="btn btn-success btn-s-xs">Start building</button>
+										</footer>
+									</section>
+								</form>
+
+							</div>
+						</div>
+
+					</section>
+				</section>
+				<a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+			</section>
+			<aside class="bg-light lter b-l aside-md hide" id="notes">
+				<div class="wrapper">Notification</div>
+			</aside>
+		</section>
+	</section>
+</section>
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.js"></script>
+<!-- App -->
+<script src="js/app.js"></script>
+<script src="js/app.plugin.js"></script>
+<script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+<div class="modal fade" id="modal-form">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-6 b-r">
+						<h3 class="m-t-none m-b">Sign in</h3>
+						<p>Sign in to meet your friends.</p>
+						<form role="form">
+							<div class="form-group">
+								<label>Email</label>
+								<input type="email" class="form-control" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" class="form-control" placeholder="Password">
+							</div>
+							<div class="checkbox m-t-lg">
+								<button type="submit" class="btn btn-sm btn-success pull-right text-uc m-t-n-xs">
+									<strong>Log in</strong></button>
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="col-sm-6">
+						<h4>Not a member?</h4>
+						<p>You can create an account <a href="#" class="text-info">here</a></p>
+						<p>OR</p>
+						<a href="#" class="btn btn-facebook btn-block m-b-sm"><i class="fa fa-facebook pull-left"></i>Sign
+							in with Facebook</a>
+						<a href="#" class="btn btn-twitter btn-block m-b-sm"><i class="fa fa-twitter pull-left"></i>Sign
+							in with Twitter</a>
+						<a href="#" class="btn btn-gplus btn-block"><i class="fa fa-google-plus pull-left"></i>Sign in
+							with Google+</a>
+					</div>
+				</div>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div>
+<!-- fuelux -->
+<script src="js/fuelux/fuelux.js"></script>
+<!-- datepicker -->
+<script src="js/datepicker/bootstrap-datepicker.js"></script>
+<!-- slider -->
+<script src="js/slider/bootstrap-slider.js"></script>
+<!-- file input -->
+<script src="js/file-input/bootstrap-filestyle.min.js"></script>
+<!-- combodate -->
+<script src="js/libs/moment.min.js"></script>
+<script src="js/combodate/combodate.js"></script>
+<!-- select2 -->
+<script src="js/select2/select2.min.js"></script>
+<!-- wysiwyg -->
+<script src="js/wysiwyg/jquery.hotkeys.js"></script>
+<script src="js/wysiwyg/bootstrap-wysiwyg.js"></script>
+<script src="js/wysiwyg/demo.js"></script>
+<!-- markdown -->
+<script src="js/markdown/epiceditor.min.js"></script>
+<script src="js/markdown/demo.js"></script>
+
+</body>
+</html>

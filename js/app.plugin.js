@@ -253,8 +253,9 @@
 
 	// select2 
  	if ($.fn.select2) {
-      $("#select2-option").select2();
-      $("#select2-tags").select2({
+      $(".select-product-option").select2();
+      $(".select-service-option").select2();
+      $("select2-tags").select2({
         tags:["red", "green", "blue"],
         tokenSeparators: [",", " "]}
       );
