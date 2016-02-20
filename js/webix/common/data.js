@@ -1,17 +1,7 @@
 var base_task_set =[
-	{ id:1, status:"new", text:"Task 1", tags:"webix,docs", comments:[{text:"Comment 1"}, {text:"Comment 2"}] },
-	{ id:2, status:"work", text:"Task 2", color:"red", tags:"webix", votes:1, personId: 4  },
-	{ id:3, status:"work", text:"Task 3", tags:"webix,docs", comments:[{text:"Comment 1"}], personId: 6 },
-	{ id:4, status:"test", text:"Task 4 pending", tags:"webix 2.5", votes:1, personId: 5  },
-	{ id:5, status:"new", text:"Task 5", tags:"webix,docs", votes:3  },
-	{ id:6, status:"new", text:"Task 6", tags:"webix,kanban", comments:[{text:"Comment 1"}, {text:"Comment 2"}], personId: 2 },
-	{ id:7, status:"work", text:"Task 7", tags:"webix", votes:2, personId: 7, image: "image001.png"  },
-	{ id:8, status:"work", text:"Task 8", tags:"webix", comments:[{text:"Comment 1"}, {text:"Comment 2"}], votes:5, personId: 4  },
-	{ id:9, status:"work", text:"Task 9", tags:"webix", votes:1, personId: 2},
-	{ id:10, status:"work", text:"Task 10", tags:"webix", comments:[{text:"Comment 1"}, {text:"Comment 2"}, {text:"Comment 3"}], votes:10, personId:1 },
-	{ id:11, status:"work", text:"Task 11", tags:"webix 2.5", votes:3, personId: 8 },
-	{ id:12, status:"done", text:"Task 12", votes:2 , personId: 8, image: "image002.png"},
-	{ id:13, status:"ready", text:"Task 14",  personId: 8}
+	{ id:1, status:"new", text:"Kitchen - Service - Integrate Fridge", color:"red", tags:"webix,docs", comments:[{text:"Comment 1"}, {text:"Comment 2"}] },
+	{ id:2, status:"work", text:"Kitchen - Product - Fridge", tags:"webix", votes:1, personId: 4  },
+	{ id:4, status:"test", text:"Kitchen - Product - Dishwasher", tags:"webix 2.5", votes:1, personId: 5  }
 ];
 
 
@@ -45,6 +35,7 @@ var task_set = [
 
 
 	{ id:22, status:"ready", text:"Task 22", tags:"webix,docs" },
+	{ id:22, status:"built", text:"Task 22", tags:"webix,docs" },
 	{ id:23, color:"red", status:"ready", text:"Task 23", tags:"webix" }
 ];
 var staff= [
