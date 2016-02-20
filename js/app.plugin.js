@@ -264,7 +264,9 @@
 	  // datepicker
 	  $(function() {
 		  $( "#datepicker-from" ).datepicker();
-		  $( "#datepicker-to" ).datepicker("show");
+		  $( "#datepicker-to" ).datepicker();
+		  $( "#datepicker-inq-date" ).datepicker();
+
 	  });
 
 
